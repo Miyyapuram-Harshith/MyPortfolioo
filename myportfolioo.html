@@ -1,15 +1,229 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harshith | CSE Student Portfolio</title>
+    <title>Miyyapuram Harshith | Portfolio</title>
+
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; background: #0b1329; color: #f8fafc; }
-        header { background: #111827; position: sticky; top: 0; z-index: 1000; }
-        nav { max-width: 1100px; margin: auto; padding: 18px 25px; display: flex; 
-              justify-content: space-between; align-items: center; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #60a5fa;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 6vw, 55px);
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #2563eb;
+        }
+
+        .hero p {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        section {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .skills, .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 24px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px #0000000d;
+            flex: 1 1 220px;
+            max-width: 320px;
+        }
+
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        #contact {
+            background: #e8efff;
+        }
+
+        #contact a {
+            color: #1d4ed8;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+        }
     </style>
 </head>
+
+<body>
+
+    <header>
+        <h2>Harshith.</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Hello, I'm <span>Miyyapuram Harshith</span></h1>
+            <p>Computer Science Student | Developer | Tech Enthusiast</p>
+            <a class="btn" href="#projects">Explore My Work</a>
+        </div>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm Miyyapuram Harshith, a Computer Science and Engineering
+                student passionate about software development, technology,
+                robotics, and building useful digital products.
+                I enjoy learning new skills and turning ideas into reality.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="card">
+                    <h3>Programming</h3>
+                    <p>Python, C, JavaScript</p>
+                </div>
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="card">
+                    <h3>Technology</h3>
+                    <p>Git, GitHub, IoT, Robotics</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="card">
+                    <h3>Articlarity</h3>
+                    <p>A productivity platform offering useful online tools.</p>
+                </div>
+                <div class="card">
+                    <h3>My Portfolio</h3>
+                    <p>A personal website showcasing my skills and projects.</p>
+                </div>
+                <div class="card">
+                    <h3>Upcoming Projects</h3>
+                    <p>Exploring robotics, IoT, and innovative software ideas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Let's connect and build something amazing!</p>
+            <p>
+                GitHub:
+                <a href="https://github.com/Miyyapuram-Harshith"
+                   target="_blank" rel="noopener noreferrer">
+                    Miyyapuram-Harshith
+                </a>
+            </p>
+            <p>Email: your-email@example.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Miyyapuram Harshith. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
